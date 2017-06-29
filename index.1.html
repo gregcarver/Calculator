@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link type=text/css rel="stylesheet" href="styles/styles.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Calculator</title>
     </head>
     <body>
-        <div>
-            <div id="readout"></div>
-            <div>
-                <span id="clear">c</span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span id="num-7">7</span>
-                <span id="num-8">8</span>
-                <span id="num-9">9</span>
-                <span id="divide">÷</span>
-                <span id="num-4">4</span>
-                <span id="num-5">5</span>
-                <span id="num-6">6</span>
-                <span id="multiply">*</span>
-                <span id="num-1">1</span>
-                <span id="num-2">2</span>
-                <span id="num-3">3</span>
-                <span id="subtract">-</span>
-                <span id="num-0">0</span>
-                <span id="decimal">.</span>
-                <span id="result">=</span>
-                <span id="add">+</span>
+        <div class="outerContainer">
+            <div id="readout" class="result"></div>
+            <div class="innerContainer">
+                <div class='column'>
+                    <span id="clear" class='button'>c</span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class='column'>
+                    <span id="num-7" class='button'>7</span>
+                    <span id="num-8" class='button'>8</span>
+                    <span id="num-9" class='button'>9</span>
+                    <span id="divide" class='button operate'>÷</span>
+                </div>
+                <div class="column">
+                    <span id="num-4" class='button'>4</span>
+                    <span id="num-5" class='button'>5</span>
+                    <span id="num-6" class='button'>6</span>
+                    <span id="multiply" class='button operate'>*</span>
+                </div>
+                <div class="column">
+                    <span id="num-1" class='button'>1</span>
+                    <span id="num-2" class='button'>2</span>
+                    <span id="num-3" class='button'>3</span>
+                    <span id="subtract" class='button operate'>-</span>
+                </div>
+                <div class="column">
+                    <span id="num-0" class='button'>0</span>
+                    <span id="decimal" class='button operate'>.</span>
+                    <span id="result" class='button operate'>=</span>
+                    <span id="add" class='button operate'>+</span>
+                </div>
             </div>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type=text/javascript src='scripts.js'></script>
     </body>
 </html>

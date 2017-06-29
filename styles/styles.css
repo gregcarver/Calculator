@@ -1,0 +1,43 @@
+.outerContainer {
+  height: 400px;
+  width: 300px;
+  background-color: yellowgreen;
+  border: 3px solid black;
+  border-radius: 25px ;
+  margin: auto;
+}
+.result {
+  width: 200px;
+  height: 30px;
+  background-color: white;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 2px solid black;
+  line-height: 30px;
+}
+.innerContainer {
+  height: 275px;
+  width: 200px;
+  background-color: white;
+  border: 3px solid black;
+  margin: auto;
+  margin-top: 35px;
+}
+.column {
+  height: 20%;
+  line-height: 50px;
+}
+.column .button {
+  height: 96%;
+  width: 24%;
+  float: left;
+  text-align: center;
+  border: 1px solid black;
+}
+.red {
+  background-color: red;
+}
+.operate {
+  background-color: lightgrey;
+}
