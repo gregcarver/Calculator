@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded',function(){
     console.log('im ready')
 })
 
-var operateValues="+ - * ÷ ="
+var operateValues="+ - * /"
 var operateSplit=operateValues.split(" ")
 var numArray= [ ]
 
@@ -26,12 +26,10 @@ $('.number').on('click',function(){
 
 })
 
-
+//add button
 $('#add').on('click',function(){
     $('#readout').empty()
     numArray.push(operateValues[0])
-    console.log(operateValues[0])
-
 })
 
 //Put result in readout
@@ -41,10 +39,6 @@ $('#result').on('click',function(){
         answer=eval(solution)
     $('#readout').append(answer)
 })
-
-var evaluate=function(){
-    //input one *operator* input two
-}
 
 //highlight
 $('.button').on('mousedown',function(){
@@ -60,33 +54,20 @@ $('#clear').on('click',function(){
     numArray.length=0
 })
 
-
-//add button
-
 //subtract button
 $('#subtract').on('click',function(){
-    eval('x'-'y')
+    $('#readout').empty()
+    numArray.push(operateSplit[1])
 })
 
 //divide
 $('#divide').on('click',function(){
-   eval('x'/'y')
+    $('#readout').empty()
+    numArray.push(operateSplit[3])
 })
 
 //multiply
 $('#multiply').on('click',function(){
-   eval('x'*'y')
+    $('#readout').empty()
+    numArray.push(operateSplit[2])
 })
-
-//equals
-/*($('#result').on('click',function(){
-   $('#readout').eval(getNumbers()+getOperator()+getNumbers())
-})*/
-
-
-
-
-//when you press =
-
-
-//function that takes the value (up to two numbers) of button clicked
